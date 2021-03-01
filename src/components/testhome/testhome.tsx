@@ -4,7 +4,7 @@ import './testhome.css'
 
 function Testhome() {
    return (
-      <span className="Test-style">Some text</span>
+      <span className="test-style">Some text</span>
    );
 }
 
