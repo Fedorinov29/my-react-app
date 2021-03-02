@@ -5,6 +5,7 @@ import Testhome from '../testhome/testhome';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../header/header';
 import Body from '../body/body'
+import Footer from '../footer/footer'
 
 
 
@@ -14,6 +15,7 @@ function App() {
     <>
       <Header />
       <Body />
+      <Footer />
     </>
   );
 }
