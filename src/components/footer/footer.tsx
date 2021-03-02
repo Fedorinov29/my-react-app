@@ -6,7 +6,7 @@ import { Container, FormGroup, FormLabel, Form, FormControl, FormText, FormCheck
 function Footer() {
    return (
       <>
-         <Container style={{ width: '500px' }} className="bg dark">
+         <Container className="col-md-6" >
             <h1 className="mt-5 text-center">Contact Us</h1>
             <Form>
 
@@ -27,7 +27,7 @@ function Footer() {
                   <FormCheck type="checkbox" label="Check me out"></FormCheck>
                </FormGroup>
 
-               <Button variant="primary" type="submit">Submit</Button>
+               <Button variant="primary" type="submit" className="mb-4">Submit</Button>
 
             </Form>
          </Container>

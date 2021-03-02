@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardDeck, Container, Button } from 'react-bootstrap';
-
+import { CardDeck, Container, Media } from 'react-bootstrap';
+import Cards from '../pictures/cards'
 
 
 
@@ -8,40 +8,50 @@ function Body() {
    return (
       <>
          <Container>
+            <h2 className="text-center">New holidays event</h2>
+            <Media>
+               <img
+                  width={64}
+                  height={64}
+                  className="mr-3"
+                  src="https://images.pexels.com/photos/6102430/pexels-photo-6102430.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="Generic placeholder"
+               />
+               <Media.Body>
+                  <h5>Media Heading</h5>
+                  <p>
+                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                     ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+                     tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                     Donec lacinia congue felis in faucibus.
+                  </p>
+
+                  <Media>
+                     <img
+                        width={64}
+                        height={64}
+                        className="mr-3"
+                        src="https://images.pexels.com/photos/6102430/pexels-photo-6102430.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="Generic placeholder"
+                     />
+                     <Media.Body>
+                        <h5>Media Heading</h5>
+                        <p>
+                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                           scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in
+                           vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                           vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </p>
+                     </Media.Body>
+                  </Media>
+               </Media.Body>
+            </Media>
             <h2 className="text-center m-4">Our team</h2>
             <CardDeck>
-               <Card>
-                  <Card.Img variant="top" src="https://images.pexels.com/photos/716281/pexels-photo-716281.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></Card.Img>
-                  <Card.Body>
-                     <Card.Title>Developers</Card.Title>
-                     <Card.Text> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis consectetur quos. Blanditiis totam perferendis ratione quae animi nisi facilis harum odit laudantium repellendus deleniti eligendi officiis, quas atque vel. </Card.Text>
-                     <Button variant="primary">About Team</Button>
-                  </Card.Body>
-               </Card>
-               <Card>
-                  <Card.Img variant="top" src="https://images.pexels.com/photos/2173508/pexels-photo-2173508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></Card.Img>
-                  <Card.Body>
-                     <Card.Title>Meetings</Card.Title>
-                     <Card.Text> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis consectetur quos. Blanditiis totam perferendis ratione quae animi nisi facilis harum odit laudantium repellendus deleniti eligendi officiis, quas atque vel. </Card.Text>
-                     <Button variant="primary">About Team</Button>
-                  </Card.Body>
-               </Card>
-               <Card>
-                  <Card.Img variant="top" src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></Card.Img>
-                  <Card.Body>
-                     <Card.Title>Solvings task</Card.Title>
-                     <Card.Text> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis consectetur quos. Blanditiis totam perferendis ratione quae animi nisi facilis harum odit laudantium repellendus deleniti eligendi officiis, quas atque vel. </Card.Text>
-                     <Button variant="primary">About Team</Button>
-                  </Card.Body>
-               </Card>
-               <Card>
-                  <Card.Img variant="top" src="https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></Card.Img>
-                  <Card.Body>
-                     <Card.Title>Deadline</Card.Title>
-                     <Card.Text> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis consectetur quos. Blanditiis totam perferendis ratione quae animi nisi facilis harum odit laudantium repellendus deleniti eligendi officiis, quas atque vel. </Card.Text>
-                     <Button variant="primary">About Team</Button>
-                  </Card.Body>
-               </Card>
+               <Cards />
+               <Cards />
+               <Cards />
+               <Cards />
             </CardDeck>
          </Container>
       </>

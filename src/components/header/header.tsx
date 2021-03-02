@@ -24,8 +24,8 @@ function Header() {
                   </Nav>
 
                   <Form inline>
-                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                     <Button variant="outline-info">Search</Button>
+                     <FormControl type="text" placeholder="Search" className="mr-sm-2 mb-2" />
+                     <Button variant="outline-info" className="mb-2">Search</Button>
                   </Form>
                </NavbarCollapse>
             </Container>
