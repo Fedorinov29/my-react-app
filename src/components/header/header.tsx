@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button, Navbar, Nav, Form, FormControl, Container } from 'react-bootstrap';
+import { Button, Navbar, Nav, Form, FormControl, Container, NavbarBrand } from 'react-bootstrap';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
-
+import logo from '../../logo.svg'
 import './Header.css';
 
 
@@ -12,7 +12,7 @@ function Header() {
       <>
          <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
             <Container>
-               <Navbar.Brand href="#home">REACT</Navbar.Brand>
+               <NavbarBrand href="/"><img src={logo} height="50" width="50" className="d-inkine-block align-top app-logo" alt="logo"></img></NavbarBrand>
                <NavbarToggle aria-controls="responsive-navbar-nav"></NavbarToggle>
                <NavbarCollapse id="responsive-navbar-nav">
                   <Nav className="mr-auto">
