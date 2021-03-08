@@ -12,7 +12,7 @@ function Footer() {
 
                <FormGroup controlId="formBasicEmail">
                   <FormLabel>Email address</FormLabel>
-                  <FormControl type="email" placeholder="Enter email"></FormControl>
+                  <FormControl type="email" placeholder="Enter email" />
                   <FormText>
                      We'll never share your emailwith anyone else
                   </FormText>
@@ -20,11 +20,11 @@ function Footer() {
 
                <FormGroup controlId="formBasicPassword">
                   <FormLabel>Example textarea</FormLabel>
-                  <FormControl as="textarea"></FormControl>
+                  <FormControl as="textarea" />
                </FormGroup>
 
                <FormGroup controlId="formBasicCheckbox">
-                  <FormCheck type="checkbox" label="Check me out"></FormCheck>
+                  <FormCheck type="checkbox" label="Check me out" />
                </FormGroup>
 
                <Button variant="primary" type="submit" className="mb-4">Submit</Button>

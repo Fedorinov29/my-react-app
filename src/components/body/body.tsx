@@ -5,9 +5,7 @@ import Cards from '../pictures/cards'
 
 
 function Body() {
-   //@ts-ignore
-   // eslint-disable-next-line
-   const picArray = ['../../assets/images/1.jpg', '../../assets/images/2.jpg', '../../assets/images/3.jpg', '../../assets/images/4.jpg'];
+   const picArray = ['https://picsum.photos/200/300', 'https://picsum.photos/200/350', 'https://picsum.photos/250/300', 'https://picsum.photos/255/300'];
    return (
       <>
          <Container>
@@ -51,10 +49,7 @@ function Body() {
             </Media>
             <h2 className="text-center m-4">Our team</h2>
             <CardDeck>
-               <Cards />
-               <Cards />
-               <Cards />
-               <Cards />
+               {picArray.map((picUrl) => <Cards picUrl={picUrl} />)}
             </CardDeck>
          </Container>
       </>

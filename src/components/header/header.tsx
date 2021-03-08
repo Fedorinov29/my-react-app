@@ -12,8 +12,8 @@ function Header() {
       <>
          <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
             <Container>
-               <NavbarBrand href="/"><img src={logo} height="50" width="50" className="d-inkine-block align-top app-logo" alt="logo"></img></NavbarBrand>
-               <NavbarToggle aria-controls="responsive-navbar-nav"></NavbarToggle>
+               <NavbarBrand href="/"><img src={logo} height="50" width="50" className="d-inkine-block align-top app-logo" alt="logo" /></NavbarBrand>
+               <NavbarToggle aria-controls="responsive-navbar-nav" />
                <NavbarCollapse id="responsive-navbar-nav">
                   <Nav className="mr-auto">
                      <Nav.Link href="#home">Home</Nav.Link>
