@@ -6,6 +6,7 @@ import Cards from '../pictures/cards'
 
 function Body() {
    //@ts-ignore
+   // eslint-disable-next-line
    const picArray = ['../../assets/images/1.jpg', '../../assets/images/2.jpg', '../../assets/images/3.jpg', '../../assets/images/4.jpg'];
    return (
       <>
