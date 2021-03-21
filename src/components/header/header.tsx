@@ -3,13 +3,13 @@ import { Button, Navbar, Nav, Form, FormControl, Container, NavbarBrand } from '
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import logo from '../../logo.svg'
-import './Header.css';
+import './header.css';
 
 
 
 function Header() {
    return (
-      <>
+      <div>
          <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
             <Container>
                <NavbarBrand href="/"><img src={logo} height="50" width="50" className="d-inkine-block align-top app-logo" alt="logo" /></NavbarBrand>
@@ -31,7 +31,8 @@ function Header() {
             </Container>
          </Navbar>
          <br />
-      </>
+      </div>
    );
 }
+
 export default Header;

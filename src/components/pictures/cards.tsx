@@ -1,11 +1,10 @@
-import React from 'react'
 import { Card, Button } from 'react-bootstrap';
 
 
 function Cards(props: { picUrl: string }) {
    return (
-      <>
-         <Card>
+      <div>
+         <Card style={{ width: '15rem' }}>
             <Card.Img variant="top" src={props.picUrl}></Card.Img>
             <Card.Body>
                <Card.Title>Developers</Card.Title>
@@ -13,7 +12,7 @@ function Cards(props: { picUrl: string }) {
                <Button variant="primary">About Team</Button>
             </Card.Body>
          </Card>
-      </>
+      </div>
    )
 }
 

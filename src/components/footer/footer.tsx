@@ -5,7 +5,7 @@ import { Container, FormGroup, FormLabel, Form, FormControl, FormText, FormCheck
 
 function Footer() {
    return (
-      <>
+      <div>
          <Container className="col-md-6" >
             <h1 className="mt-5 text-center">Contact Us</h1>
             <Form>
@@ -31,7 +31,7 @@ function Footer() {
 
             </Form>
          </Container>
-      </>
+      </div>
    )
 }
 
