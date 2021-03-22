@@ -1,5 +1,5 @@
 import { CardDeck, Container } from 'react-bootstrap';
-import Cards from '../pictures/cards';
+import Cards from '../card/cards';
 import axios from 'axios';
 
 
